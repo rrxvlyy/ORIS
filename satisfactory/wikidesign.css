@@ -1,0 +1,915 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.wikiheader{
+    background-color: #000538;
+    padding: 0 0.85em; /*размеры шапки*/
+    height: 35px;
+    display: flex;
+    align-items: center;
+
+    gap: 0.8em;/*расстояние от лого до кнопки*/
+}
+.indie_link{
+    text-decoration: none; /*чтобы не было подчеркиваний*/
+
+    padding: 0 10px; /*расстояние от углов кнопки до текста и иконки*/
+    background-color: #29305c;
+    border-radius: 0.4em; /*закругление*/
+    gap: 5px; /*расстояние от текста до иконки*/
+
+    display: flex;
+    align-items: center;
+
+    font-family: "Nunito";
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.header_right{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+
+.theme_button{
+    background-color: #000538;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    border-radius: 0.4em;
+    transition: background-color 0.2s ease;
+}
+.theme_button:hover{
+    background-color: #29305c;
+}
+
+
+
+
+
+.create_account{
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    padding-left: 10px;
+
+    text-decoration: none;
+
+    font-family: "Nunito";
+    font-size: 14px;
+    color: #ffffff;
+}
+.create_account:hover{
+    text-decoration: underline;
+}
+
+.login_account{
+    text-decoration: none;
+
+    font-family: "Nunito";
+    font-size: 14px;
+    color: #ffffff;
+}
+.login_account:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+.satisfactory_logo{
+    display: flex;
+    justify-content: center;
+}
+
+.satisfactory_logo img{
+    width: calc(calc(500 / 194) * 6em);
+    height: 6em;
+}
+
+
+
+
+
+
+
+
+
+.NavBar{
+    font-family: "Noto Sans";
+
+    width: 144px;
+    height: 176.48px;
+    background-color: #eee;
+    border-radius: 8px;
+    padding: 0.25em 0;
+
+
+    margin-left: 15px;
+}
+.NavBar-name{
+    font-size: 0.9em;
+    color: #000000;
+
+    text-align: center;
+
+    border-bottom: 1px solid #fa9549;
+    padding: 0.25em 0;
+    margin: 0px 0.25em;
+
+}
+.Navigation-menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.Navigation-menu li{
+    padding: 0 10px;
+}
+.Navigation-menu a{
+    font-size: 0.75em;
+    font-weight: 600;
+    color: #0645ad;
+    text-decoration: none;
+}
+.Navigation-menu a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.UsePageBar{
+    font-family: "Noto Sans";
+    width: 144px;
+    height: 245px;
+    background-color: #eee;
+    border-radius: 8px;
+    padding: 0.25em 0;
+
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.UsePageBar-name{
+    font-size: 0.9em;
+    color: #000000;
+
+    text-align: center;
+
+    border-bottom: 1px solid #fa9549;
+    padding: 0.25em 0;
+    margin: 0px 0.25em;
+}
+.UsePageBar-menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.UsePageBar-menu li{
+    padding: 0 10px;
+}
+.UsePageBar-menu a{
+    font-size: 0.75em;
+    font-weight: 600;
+    color:#0645ad;
+    text-decoration: none;
+}
+.UsePageBar-menu a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.SatisfactoryBar{
+    font-family: "Noto Sans";
+    width: 144px;
+    height: 200px;
+    background-color: #eee;
+    border-radius: 8px;
+    padding: 0.25em 0;
+
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.SatisfactoryBar-name{
+    font-size: 0.9em;
+    color: #000000;
+
+    text-align: center;
+
+    border-bottom: 1px solid #fa9549;
+    padding: 0.25em 0;
+    margin: 0px 0.25em;
+}
+.SatisfactoryBar-menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.SatisfactoryBar-menu li{
+    padding: 0 10px;
+}
+.SatisfactoryBar-menu a{
+    font-size: 0.75em;
+    font-weight: 600;
+    color:#0645ad;
+    text-decoration: none;
+}
+.SatisfactoryBar-menu a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ToolsBar{
+    font-family: "Noto Sans";
+    width: 144px;
+    height: 200px;
+    background-color: #eee;
+    border-radius: 8px;
+    padding: 0.25em 0;
+
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.ToolsBar-name{
+    font-size: 0.9em;
+    color: #000000;
+
+    text-align: center;
+
+    border-bottom: 1px solid #fa9549;
+    padding: 0.25em 0;
+    margin: 0px 0.25em;
+}
+.ToolsBar-menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.ToolsBar-menu li{
+    padding: 0 10px;
+}
+.ToolsBar-menu a{
+    font-size: 0.75em;
+    font-weight: 600;
+    color:#0645ad;
+    text-decoration: none;
+}
+.ToolsBar-menu a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.tools-link{
+    width: 17px;
+    height: 17px;
+    color: #0645ad;
+    vertical-align: text-bottom;
+}
+.tools-page{
+    width: 14px;
+    height: 14px;
+    color: #0645ad;
+    vertical-align: text-bottom;
+}
+.tools-star{
+    width: 17px;
+    height: 17px;
+    color: #0645ad;
+    vertical-align: text-bottom;
+}
+.tools-data{
+    width: 14px;
+    height: 14px;
+    color: #0645ad;
+    vertical-align: text-bottom;
+}
+
+
+
+
+
+
+
+
+
+
+.Main{
+    width: 1450px;
+    height: 2827.89px;
+    background-color: #eee;
+    border-radius: 1.5em;
+    margin-left: 11em;
+    margin-right: 1em;
+    margin-top: -885px;
+
+    padding: 0 12px;
+}
+
+.tab-main-page{
+    background-color: #fa9549;
+    padding: 10px;
+    margin-left: 10px;
+    font-family: "Noto Sans";
+    color: #000000;
+    text-decoration: none;
+    font-size: 15px;
+}
+.tab-discussion{
+    font-family: "Noto Sans";
+    color: #0645ad;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px;
+}
+.tab-read{
+    background-color: #fa9549;
+    padding: 10px;
+    font-family: "Noto Sans";
+    color: #000000;
+    text-decoration: none;
+    font-size: 15px;
+}
+.tab-view-source{
+    font-family: "Noto Sans";
+    color: #0645ad;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px;
+}
+.tab-view-history{
+    font-family: "Noto Sans";
+    color: #0645ad;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px;
+}
+
+
+.bar-tabs-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 0;
+}
+.bar-tabs-right{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+    padding: 0;
+    gap: 5px;
+}
+
+
+.MainBar{
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #aaa;
+}
+.wiki-search input{
+    width: 320px;
+    height: 28px;
+    box-sizing: border-box;
+    padding: 0 12px;
+    font-size: 15px;
+    font-family: "Noto Sans";
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    background: #e0e0e0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Ad{
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+}
+
+
+
+
+
+
+/* ------------------------------------------------------------------ */
+
+
+
+
+
+.page {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+
+.left-col {
+    width: 65%;
+    float: left;
+}
+
+
+.right-col {
+    width: 33%;
+    float: right;
+}
+
+
+.block {
+    background-color: #e0e0e0;
+    margin-bottom: 15px;
+    border-radius: 20px 20px 5px 5px;
+    overflow: hidden; 
+}
+
+
+.full {
+    clear: both; 
+    width: 100%;
+}
+
+/* Заголовок блока где картинки*/
+.header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: 24px;
+    padding: 8px;
+    letter-spacing: 1px;
+
+}
+
+/* Большой заголовок для баннера */
+.big-header {
+    font-size: 32px;
+    padding: 20px;
+
+}
+.wiki-text {
+    font-size: 40px;
+}
+
+
+
+
+/* Контент внутри блока подписи под картинками*/
+.content {
+    padding: 15px;
+    font-family: "Noto Sans";
+}
+.content p {
+    margin-bottom: 10px; 
+}
+.content ul {
+    padding-left: 8px;
+}
+
+.content li {
+    margin-bottom: 6px; 
+}
+
+
+
+
+
+.articles-table {
+    width: 100%;
+    text-align: center; 
+    border-collapse: collapse;
+}
+
+.articles-table td {
+    padding: 0; 
+    vertical-align: top; 
+    width: 16%; 
+}
+
+
+
+
+.update-logo img{
+    width: 300px;
+}
+
+
+
+.social-row {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 10px;
+    padding: 10px 0;
+}
+
+/* Стили для  иконок  */
+.social-row img {
+    width: 45px;             
+    height: 45px;           
+    object-fit: contain;     
+    border-radius: 5px; 
+    transition: transform 0.2s; 
+}
+
+
+/*  линия между рядами */
+.divider {
+    border: 0;
+    border-top: 1px solid #aaa; 
+    margin: 10px 0; 
+    width: 100%;
+}
+
+
+
+
+.nav-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nav-table tr {
+    border-bottom: 1px solid #bbb;
+}
+
+.nav-table tr:last-child {
+    border-bottom: none;
+}
+
+.nav-table td {
+    padding: 5px 15px;
+    vertical-align: middle;
+}
+
+/* Левая колонка букв каких-то */
+.nav-tools {
+    width: 60px;
+    text-align: center;
+    font-size: 11px;
+    color: #666; 
+}
+
+
+.nav-tools a {
+    color: #0645ad;
+    text-decoration: none;
+}
+
+.nav-tools a:hover {
+    text-decoration: underline;
+}
+
+
+.nav-text {
+    text-align: center;
+    font-size: 15px;
+
+    color: #000; 
+}
+
+/
+.nav-text a {
+    color: #0645ad;
+    text-decoration: none;
+}
+
+.nav-text a:hover {
+    text-decoration: underline;
+}
+
+/* Правая колонка Expand */
+.nav-expand {
+    text-align: right;
+    width: 80px;
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.bottom-row {
+    gap: 8px; 
+}
+
+.articles-table img {
+    max-width: 80%; 
+    height: auto;
+    margin-bottom: 2px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.articles-table a {
+    font-size: 13px; 
+    line-height: 1.2;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Ссылки */
+a {
+    color: #0645ad;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Таблица навигации */
+.nav {
+    width: 100%;
+    border-collapse: collapse;
+}
+.nav td {
+    border-bottom: 1px solid #aaa;
+    padding: 8px;
+}
+.nav td:first-child { width: 50px; color: #666; font-size: 10px; }
+.nav td:nth-child(2) { text-align: center; font-weight: bold; }
+.nav td:last-child { text-align: right; }
+
+/* Картинка видео */
+.video-img {
+    width: 100%;
+    display: block;
+}
+
+
+.socials {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+}
+
+
+.fake-logo {
+    background: #333;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.input-field {
+    width: 300px;
+    padding: 5px;
+}
+
+
+button {
+    background: #eee;
+    border: 1px solid #999;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+
+.footer {
+    clear: both;
+    margin-top: 20px;
+    border-top: 2px solid #ccc;
+    padding-top: 10px;
+    font-size: 12px;
+    color: #333;
+}
+
+
+.dashed-box {
+    width: 600px;
+    height: 60px;
+    border: 2px dashed #aaa;
+    margin: 15px auto;
+    background: #e0e0e0;
+}
+
+.small-links {
+    margin-top: 15px;
+}
+
+
+/* communuty */
+.full-width {
+    clear: both;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.community-buttons {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.community-buttons td {
+    text-align: center;
+    padding: 0 10px;
+}
+.btn {
+    display: block;
+    background: #fff;
+    border: 2px solid #bbb;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #0645ad;
+    text-decoration: none;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+}
+.btn:hover {
+    background: #f0f0f0;
+}
+
+
+.thick-line {
+    border: 0;
+    border-top: 2px solid #666;
+    margin: 15px 0;
+}
+.thin-line {
+    border: 0;
+    border-top: 1px solid #aaa;
+    margin: 15px 0;
+}
+
+
+.create-input {
+    width: 300px;
+    padding: 5px;
+    border: 1px solid #aaa;
+}
+.create-btn {
+    background: #555;
+    color: white;
+    border: 1px solid #333;
+    padding: 6px 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.community-list {
+    padding-left: 40px;
+    margin-top: 15px;
+    font-size: 14px;
+}
+.community-list li {
+    margin-bottom: 8px;
+}
+.community-list ul {
+    margin-top: 5px;
+}
+
+.right-text {
+    text-align: right;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+/* */
+
+
+
+
+
+
+.footer-wrapper {
+    clear: both;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+
+.category-box {
+    border: 1px solid #a2a9b1;
+    background-color: #f8f9fa;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
+
+
+.dashed-box {
+    width: 500px;
+    height: 80px;
+    background-color: #dcdcdc;
+    border: 2px dashed #aaa;
+    margin: 0 auto 30px auto; /* Центрирование и отступ снизу */
+}
+
+
+.footer-bottom {
+    background-color: #dcdcdc;
+    border-top: 1px solid #aaa;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-left {
+    flex: 1;
+    min-width: 300px;
+}
+.footer-left p {
+    margin: 0 0 8px 0;
+}
+
+.footer-links a {
+    margin-right: 15px;
+    color: #0645ad;
+}
+
+
+.footer-right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.logo-box {
+    background: #fff;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 11px;
+    line-height: 1.2;
+    font-family: "Noto Sans";
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
