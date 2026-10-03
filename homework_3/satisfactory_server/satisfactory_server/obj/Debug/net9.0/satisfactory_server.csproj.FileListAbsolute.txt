@@ -1,0 +1,16 @@
+C:\Users\ibrem\RiderProjects\satisfactory_server\satisfactory_server\bin\Debug\net9.0\satisfactory_server.exe
+C:\Users\ibrem\RiderProjects\satisfactory_server\satisfactory_server\bin\Debug\net9.0\satisfactory_server.deps.json
+C:\Users\ibrem\RiderProjects\satisfactory_server\satisfactory_server\bin\Debug\net9.0\satisfactory_server.runtimeconfig.json
+C:\Users\ibrem\RiderProjects\satisfactory_server\satisfactory_server\bin\Debug\net9.0\satisfactory_server.dll
+C:\Users\ibrem\RiderProjects\satisfactory_server\satisfactory_server\bin\Debug\net9.0\satisfactory_server.pdb
+C:\Users\ibrem\RiderProjects\satisfactory_server\satisfactory_server\obj\Debug\net9.0\satisfactory_server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ibrem\RiderProjects\satisfactory_server\satisfactory_server\obj\Debug\net9.0\satisfactory_server.AssemblyInfoInputs.cache
+C:\Users\ibrem\RiderProjects\satisfactory_server\satisfactory_server\obj\Debug\net9.0\satisfactory_server.AssemblyInfo.cs
+C:\Users\ibrem\RiderProjects\satisfactory_server\satisfactory_server\obj\Debug\net9.0\satisfactory_server.csproj.CoreCompileInputs.cache
+C:\Users\ibrem\RiderProjects\satisfactory_server\satisfactory_server\obj\Debug\net9.0\satisfactory_server.dll
+C:\Users\ibrem\RiderProjects\satisfactory_server\satisfactory_server\obj\Debug\net9.0\refint\satisfactory_server.dll
+C:\Users\ibrem\RiderProjects\satisfactory_server\satisfactory_server\obj\Debug\net9.0\satisfactory_server.pdb
+C:\Users\ibrem\RiderProjects\satisfactory_server\satisfactory_server\obj\Debug\net9.0\satisfactory_server.genruntimeconfig.cache
+C:\Users\ibrem\RiderProjects\satisfactory_server\satisfactory_server\obj\Debug\net9.0\ref\satisfactory_server.dll
+C:\Users\ibrem\RiderProjects\satisfactory_server\satisfactory_server\bin\Debug\net9.0\settings.json
+C:\Users\ibrem\RiderProjects\satisfactory_server\satisfactory_server\bin\Debug\net9.0\static\search-engine.html

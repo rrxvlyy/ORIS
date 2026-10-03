@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Войти</title>
+    <link rel="icon" type="image/png" href="images/steam logo.png">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+        
+        .header{
+            background-color: #171d25;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 0;
+            padding-bottom: 0;
+            height: 104px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            font-family: "Noto Sans";
+            font-weight: 400;
+        }
+        .logo_steam{
+            width: 144.5px;
+            height: 44px;
+        }
+        .div_logo_steam{
+            margin-right: 40px;
+            display: flex;
+            align-items: center;
+        }
+
+        .header_nav_left{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+
+        .shop_button{
+            color: #1a9fff;
+        }
+        .community_button{
+            color: #dcdedf;
+            text-decoration: none;
+        }
+        .info_button{
+            color: #dcdedf;
+            text-decoration: none;
+        }
+        .support_button{
+            color: #dcdedf;
+            text-decoration: none;
+        }
+
+
+        .header_nav_right{
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            margin-bottom: 65px;
+
+            font-family: "Noto Sans";
+        }
+        .download_button{
+            display:flex;
+            align-items: center;
+            gap: 10px;
+            padding: 3px 7px;
+            margin-right: 15px;
+            background-color: #5c7e10;
+
+            font-size: 11px;
+            color: #dcdedf;
+            text-decoration: none;
+        }
+        .enter_button{
+            text-decoration: none;
+            color: #dcdedf;
+            font-size: 10px;
+
+            
+        }
+        .language_button{
+            border-left: 1px solid #aaa;
+            padding-left: 15px;
+            margin-left: 15px;
+
+            text-decoration: none;
+            color: #dcdedf;
+            font-size: 10px;
+        }
+        .arrow {
+            display: inline-block;
+            margin-left: 2px;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 4px solid #aaa;
+        }
+
+
+        .panel_nav{
+            background-color: #1A2634;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            font-family: "Noto Sans";
+            gap: 20px;
+        }
+        .view_button{
+            color: #dcdedf;
+            text-decoration: none;
+            font-size: 13px;
+        }
+        .foryou_button{
+            color: #dcdedf;
+            text-decoration: none;
+            font-size: 13px;
+        }
+        .category_button{
+            color: #dcdedf;
+            text-decoration: none;
+            font-size: 13px;
+        }
+        .devices_button{
+            color: #dcdedf;
+            text-decoration: none;
+            font-size: 13px;
+        }
+        .game_button{
+            color: #dcdedf;
+            text-decoration: none;
+            font-size: 13px;
+        }
+        .special_button{
+            color: #dcdedf;
+            text-decoration: none;
+            font-size: 13px;
+        }
+        .search{
+            padding: 6px;
+            width: 400px;
+        }
+        .shop_search{
+            padding: 10px;
+        }
+
+
+        .sign{
+            background-image: url("images/new_login_bg_strong_mask.jpg");
+            height: 666px;
+            
+            display: flex;
+            justify-content: center;
+
+        }
+        .text_enter{
+            color: #fff;
+            font-size: 28px;
+            font-family: "Noto Sans";
+            font-weight: 800;
+
+            transform: translate3d(80px, 80px, 00px);
+        }
+        .sign_window{
+            background-color: #181a21;
+            width: 813px;
+            height: 336px;
+
+            color: #dcdedf;
+
+            display: flex;
+            flex-direction: row;
+            padding: 24px 32px;
+
+            font-family: "Noto Sans";
+            font-size: 12px;
+
+            transform: translateY(150px);
+
+            border-radius: 5px;
+        }
+        .signin{
+            width: 510px;
+            height: 39px;
+            background-color: #32353c;
+
+            border: none;
+            outline: none; /* при клике*/
+        }
+        .text_SIGN{
+            color: #1999ff;
+            margin-bottom: 15px;
+            margin-top: 25px;
+        }
+
+
+        .custom-checkbox {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        user-select: none;
+        font-family: sans-serif;
+
+        margin-top: 10px;
+        }
+
+
+        .custom-checkbox input {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+        }
+
+
+        .checkbox-box {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: #2b303c;
+        border-radius: 4px;   
+        margin-right: 10px;  
+        transition: background-color 0.2s;
+        }
+
+        .checkbox-box::after {
+        content: "";
+        position: absolute;
+        display: none;
+        
+        left: 7px;
+        top: 3px;
+        width: 5px;
+        height: 10px;
+        border: solid #ffffff; 
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg); 
+        }
+
+
+        .custom-checkbox input:checked ~ .checkbox-box::after {
+        display: block;
+        }
+
+
+        .custom-checkbox:hover .checkbox-box {
+        background-color: #353b4a;
+        }
+
+        .checkbox-text {
+        color: #c5c7cb;
+        font-size: 14px;
+        }
+
+        .button_VOITI{
+            width: 270px;
+            height: 48px;
+            background: linear-gradient(90deg, #06BFFF 0%, #2D73FF 100%);
+            color: #fff;
+
+            margin-top: 10px;
+
+            border: none;
+            outline: none;
+        }
+        .REGISTR{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            width: 510px;
+            height: 279px;
+            padding-bottom: 60px;
+        }
+        .BUTTON{
+            display: flex;
+            justify-content: center;
+        }
+        .Acc_help{
+            font-family: "Noto Sans";
+            font-size: 12px;
+            color: #afafaf;
+        }
+        .help_account{
+            display: flex;
+            justify-content: center;
+            transform: translateY(60px);
+        }
+
+        .QR_registr{
+            width: 200px;
+            height: 279px;
+            margin-left: 35px;
+
+            font-family: "Noto Sans";
+            font-size: 12px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
+        .qr{
+            width: 200px;
+            border-radius: 15px;
+            margin-top: 10px;
+        }
+        .orQR{
+            color: #1999ff;
+        }
+        .qr_text{
+            color: #afafaf;
+
+            margin-top: 10px;
+            text-align: center
+        }
+        .mobile_app{
+            display: inline-block;
+            color: #afafaf;
+        }
+
+        .first_in_steam{
+            background-color: #181A21;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+
+            padding-top: 50px;
+        }
+
+        .button_first{
+            width: 154px;
+            height: 30px;
+            background: linear-gradient(90deg, #06BFFF 0%, #2D73FF 100%);
+            color: #fff;
+            font-size: 15px;
+
+            margin-top: 10px;
+
+            border: none;
+            outline: none;
+        }
+        .button_first hover{
+            background-color: #181a21;
+        }
+        .text_first_steam{
+            font-family: "Noto Sans";
+            font-size: 20px;
+            font-weight: 800;
+
+            color: #fff;
+        }
+        .learn_more_text{
+            font-family: "Noto Sans";
+            font-size: 14px;
+
+            color: #b8b6b4;
+        }
+
+        .left_c{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .right_c {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            max-width: 300px;
+
+            padding-left: 25px;
+        }
+        .learn-more{
+            color: #b8b6b4;
+        }
+
+        .footer{
+            background-color: #181a21;
+            padding-top: 50px;
+        }
+        .steam_info{
+            color: #8b929a;
+            margin-left: 200px;
+            
+        }
+
+        .footer *{
+            color: #8f98a0; 
+            fill: #8f98a0; 
+            max-width: 400px;
+
+            font-family: "Noto Sans";
+            font-size: 12px;
+            
+        }
+        .footer a {
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: #ffffff;
+            fill: #ffffff;
+        }
+        .icons{
+            display: flex;
+            gap: 100px;
+        }
+
+
+
+        .footer-column {
+            flex: 1;                   
+            min-width: 150px;    
+        }
+
+
+        .footer-column h3 {
+            color: #ffffff;        
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;   
+            margin-bottom: 15px;       
+            margin-top: 0;
+        }
+
+
+        .footer-column ul {
+            list-style: none;        
+            padding: 0;     
+            margin: 0;
+        }
+
+
+        .footer-column ul li {
+            margin-bottom: 10px;    
+        }
+
+        .footer-column ul li a {
+            color: #8f98a0;     
+            text-decoration: none;    
+            font-size: 13px;
+            transition: color 0.2s;       
+        }
+
+
+        .footer-column ul li a:hover {
+            color: #ffffff;  
+        }
+
+
+        .footer_links{
+            display: flex; 
+            justify-content: space-between; 
+            background-color: #171a21; 
+            padding-left: 150px;
+            font-family: "Noto Sans";
+            gap: 70px; 
+        }
+
+        .footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            padding-bottom: 50px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+
+    <header class="header">
+        <div class="header_nav_left">
+            <div class="div_logo_steam">
+                <img class="logo_steam" src="images/logo_steam.svg" alt="">
+            </div>
+
+            <a class="shop_button" href="https://store.steampowered.com/?snr=1_60_4__global-header">МАГАЗИН</a>
+            <a class="community_button" href="https://steamcommunity.com/">СООБЩЕСТВО</a>
+            <a class="info_button" href="https://store.steampowered.com/about/?snr=1_60_4__global-header">ИНФОРМАЦИЯ</a>
+            <a class="support_button" href="https://help.steampowered.com/ru/">ПОДДЕРЖКА</a>
+        </div>
+
+        <div class="header_nav_right">
+            <a class="download_button" href="https://store.steampowered.com/about/?snr=1_60_4__global-header">
+                <img width="15px" height="15px" src="images/btn_header_installsteam_download.png" alt="">
+                Установить Steam
+            </a>
+            <a class="enter_button" href="https://store.steampowered.com/login/?redir=login%2F%3Fredir%3D%26redir_ssl%3D1&redir_ssl=1&snr=1_60_4__global-header">вход</a>
+            <a class="language_button" href="">
+                язык
+                <span class="arrow"></span>
+            </a>
+        </div>
+    </header>
+
+
+
+
+    <div class="panel_nav">
+        <a class="view_button" href="">
+            Просмотр
+            <span class="arrow"></span>
+        </a>
+        <a class="foryou_button" href="">
+            Рекомендации
+            <span class="arrow"></span>
+        </a>
+        <a class="category_button" href="">
+            Категории
+            <span class="arrow"></span>
+        </a>
+        <a class="devices_button" href="">
+            Устройства
+            <span class="arrow"></span>
+        </a>
+        <a class="game_button" href="">
+            Способы игры
+            <span class="arrow"></span>
+        </a>
+        <a class="special_button" href="">
+            Особые разделы
+            <span class="arrow"></span>
+        </a>
+
+        <div class="shop_search">
+            <input type="text" class="search" placeholder="Поиск по магазину">
+        </div>
+    </div>
+
+
+
+
+    <div class="sign">
+        <p class="text_enter">Вход</p>
+
+        <div class="sign_window">
+            <div class="REGISTR">
+                <p class="text_SIGN">ВОЙДИТЕ, ИСПОЛЬЗУЯ ИМЯ АККАУНТА <input type="text" class="signin" placeholder=""></p>
+
+                <p class="text_PASSWORD">ПАРОЛЬ <input type="text" class="signin" placeholder=""></p>
+
+                <label class="custom-checkbox" for="remember-me">
+                    <input type="checkbox" id="remember-me">
+                    <span class="checkbox-box"></span>
+                    <span class="checkbox-text">Запомнить меня</span>
+                </label>
+
+                <div class="BUTTON">
+                    <button class="button_VOITI">Войти</button>
+                </div>
+
+                <div class="help_account">
+                    <a class="Acc_help" href="https://help.steampowered.com/wizard/HelpWithLogin?redir=https%3A%2F%2Fstore.steampowered.com%2Flogin%2F%3Fredir%3D%26redir_ssl%3D1">Помогите, я не могу войти в аккаунт</a>
+                </div>
+            </div>
+
+            <div class="QR_registr">
+                <p class="orQR">ИЛИ QR-КОД</p>
+
+                <img class="qr" src="images/qr_code.png" alt="">
+
+                <p class="qr_text">Используйте<a class="mobile_app" href="https://store.steampowered.com/mobile">мобильное приложение Steam</a>, чтобы войти с помощью QR-кода</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="first_in_steam">
+        <div class="left_c">
+            <p class="text_first_steam">Первый раз в Steam?</p>
+            <a href="https://store.steampowered.com/join/?&snr=1_60_4__62">
+                <button class="button_first">Создать аккаунт</button>
+            </a>
+        </div>
+        
+        <div class="right_c">
+            <p class="learn_more_text">
+                Это бесплатно и просто. Откройте для себя тысячи игр, в которые можно играть с миллионами новых друзей. 
+                <a class="learn-more" href="https://store.steampowered.com/about">Узнайте больше о Steam</a>
+            </p>
+        </div>
+    </div>
+
+
+    <div class="footer">
+
+        <div class="steam_info">
+            <div class="icons">
+                <svg xmlns="http://www.w3.org/2000/svg" width="142" height="34" viewBox="0 0 142 34" fill="currentColor"><path d="M16.832 0C7.95936 0 0.690707 6.8414 0 15.5358L9.05289 19.2787C9.81996 18.7541 10.7466 18.4467 11.7436 18.4467C11.8329 18.4467 11.9219 18.4498 12.0101 18.4548L16.0359 12.6194C16.0359 12.5916 16.0356 12.5645 16.0356 12.537C16.0356 9.02463 18.8927 6.16711 22.4054 6.16711C25.9178 6.16711 28.7749 9.02463 28.7749 12.537C28.7749 16.0493 25.9178 18.9072 22.4054 18.9072C22.3569 18.9072 22.3088 18.9061 22.2607 18.9049L16.5189 23.0018C16.522 23.0763 16.5247 23.1523 16.5247 23.2278C16.5247 25.8647 14.38 28.009 11.7436 28.009C9.42936 28.009 7.49431 26.3572 7.05598 24.1698L0.581889 21.4933C2.58643 28.5828 9.09985 33.7805 16.832 33.7805C26.1606 33.7805 33.7225 26.2182 33.7225 16.8908C33.7225 7.56189 26.1602 0 16.832 0Z"></path><path d="M10.5846 25.6287L8.50977 24.7715C8.87746 25.537 9.51356 26.1781 10.3581 26.5301C12.184 27.2907 14.2889 26.4244 15.0499 24.597C15.4184 23.7135 15.4207 22.7379 15.0553 21.8521C14.6906 20.9659 14.0026 20.2748 13.1179 19.906C12.2401 19.5406 11.2997 19.5539 10.4735 19.8659L12.6166 20.7521C13.9633 21.3134 14.6001 22.8597 14.0389 24.2064C13.4787 25.5534 11.9312 26.1903 10.5846 25.6287Z"></path><path d="M26.6497 12.5368C26.6497 10.1966 24.746 8.29248 22.4054 8.29248C20.0653 8.29248 18.1611 10.1966 18.1611 12.5368C18.1611 14.8773 20.0653 16.7807 22.4054 16.7807C24.746 16.7803 26.6497 14.8769 26.6497 12.5368ZM19.2241 12.5295C19.2241 10.7686 20.6517 9.34133 22.4127 9.34133C24.1736 9.34133 25.6012 10.7686 25.6012 12.5295C25.6012 14.2904 24.1736 15.7177 22.4127 15.7177C20.6517 15.7177 19.2241 14.2901 19.2241 12.5295Z"></path><path d="M59.9854 10.1185L58.4527 12.8127C57.2721 11.9879 55.6722 11.4915 54.2754 11.4915C52.6791 11.4915 51.6914 12.1523 51.6914 13.336C51.6914 14.7741 53.446 15.1087 56.0538 16.0447C58.8571 17.036 60.4684 18.201 60.4684 20.7685C60.4684 24.2813 57.706 26.2541 53.7356 26.2541C51.8005 26.2541 49.4663 25.7545 47.6719 24.6629L48.7899 21.6761C50.2476 22.446 51.9913 22.9027 53.5458 22.9027C55.6411 22.9027 56.6371 22.1296 56.6371 20.9867C56.6371 19.679 55.1183 19.286 52.6667 18.4741C49.8727 17.5412 47.9366 16.3172 47.9366 13.4756C47.9366 10.2711 50.5031 8.43066 54.1958 8.43066C56.7695 8.43066 58.838 9.24616 59.9854 10.1185Z"></path><path d="M71.9674 11.5261V25.6635H68.3585V11.5261H63.1201V8.43066H77.1903V11.5261H71.9674Z"></path><path d="M84.7983 11.5168V15.3998H91.7049V18.4953H84.7983V22.5396H92.8116V25.6635H81.1904V8.43066H92.8116V11.5168H84.7983Z"></path><path d="M100.866 22.3173L99.7256 25.6635H95.9424L102.404 8.43066H106.036L112.68 25.663H108.769L107.604 22.3168L100.866 22.3173ZM104.2 12.5412L101.846 19.4411H106.602L104.2 12.5412Z"></path><path d="M131.201 15.0916L126.485 25.1614H124.449L119.809 15.1816V25.6635H116.354V8.43066H119.802L125.593 20.8704L131.179 8.43066H134.657V25.6635H131.202L131.201 15.0916Z"></path><path d="M141.634 9.63026C141.634 11.1113 140.525 12.0343 139.251 12.0343C137.973 12.0343 136.86 11.1113 136.86 9.63026C136.86 8.14976 137.973 7.23291 139.251 7.23291C140.525 7.23291 141.634 8.14976 141.634 9.63026ZM137.261 9.63026C137.261 10.8693 138.154 11.6475 139.251 11.6475C140.344 11.6475 141.233 10.8693 141.233 9.63026C141.233 8.38763 140.344 7.62126 139.251 7.62126C138.157 7.62126 137.261 8.39694 137.261 9.63026ZM139.284 8.40521C139.902 8.40521 140.11 8.73203 140.11 9.08522C140.11 9.40893 139.918 9.62612 139.684 9.73678L140.238 10.7746H139.785L139.318 9.85469H138.836V10.7746H138.459V8.40521H139.284ZM138.84 9.5077H139.261C139.533 9.5077 139.694 9.33654 139.694 9.12142C139.694 8.90423 139.579 8.76461 139.26 8.76461H138.839V9.5077H138.84Z"></path></svg>
+
+            <a href="https://valvesoftware.com" target="_blank" class="FYJ4NYxpWeIha0N1-jUcm _2OgYmw12nDHXtyT9za9yzL _1DLGHwAfYnbFVIwbZjO2cn" style="--text-color: var(--color-dull-11); --white-space: nowrap;"><svg xmlns="http://www.w3.org/2000/svg" width="95" height="27" viewBox="0 0 95 27" fill="currentColor"><g clip-path="url(#«r1»)"><path d="M29.1289 15.142H32.6305L30.8018 8.41162L29.1289 15.142Z"></path><path d="M0 27H91.2646V0H0V27ZM14.822 21.4914H11.9334L7.21098 5.58171H10.3333L13.3777 17.591L16.3442 5.58171H19.6172L14.822 21.4914ZM34.3041 21.4914L33.2391 17.5127H28.5218C28.5218 17.5127 27.701 20.7134 27.5347 21.4131C26.584 21.4862 24.2617 21.4131 24.2617 21.4131L28.7504 5.58171H33.0105L37.4992 21.4914H34.3041ZM54.3889 21.4914H44.6478V5.58171H47.7702V18.8128H54.3889V21.4914ZM65.8028 21.4914H62.987L58.1918 5.58171H61.392L64.4365 17.4396L67.4029 5.58171H70.598L65.8028 21.4914ZM83.7627 7.64939H79.5026V9.9416H83.3835V12.0041H79.5026V14.3746H83.7627V16.4423H77.144V5.58171H83.7627V7.64939Z"></path><path d="M93.4622 0C94.3194 0 95 0.699671 95 1.57687C95 2.45407 94.3194 3.15896 93.4518 3.15896C92.5842 3.15896 91.8984 2.46451 91.8984 1.57687C91.8984 0.689228 92.5946 0 93.4518 0H93.457H93.4622ZM93.457 0.245407C92.766 0.245407 92.1998 0.84065 92.1998 1.57687C92.1998 2.31309 92.766 2.91356 93.4622 2.91356C94.1584 2.91878 94.7143 2.32876 94.7143 1.58209C94.7143 0.835428 94.1584 0.245407 93.4622 0.245407H93.457ZM93.1609 2.49062H92.8803V0.736221C93.0258 0.715336 93.1661 0.69445 93.3739 0.69445C93.6388 0.69445 93.8155 0.751886 93.9194 0.824986C94.0233 0.903307 94.0804 1.0234 94.0804 1.19049C94.0804 1.42023 93.9246 1.56121 93.7375 1.61864V1.63431C93.8882 1.66564 93.9973 1.80139 94.0285 2.06246C94.07 2.33398 94.1116 2.43841 94.1428 2.49584H93.8466C93.8051 2.43841 93.7635 2.27654 93.7272 2.0468C93.6856 1.82228 93.5713 1.73874 93.3479 1.73874H93.1557V2.49584L93.1609 2.49062ZM93.1609 1.51944H93.3635C93.5921 1.51944 93.7895 1.43589 93.7895 1.21659C93.7895 1.05995 93.6752 0.908528 93.3635 0.908528C93.2752 0.908528 93.2076 0.91375 93.1609 0.924193V1.51944Z"></path></g><defs><clipPath id="«r1»"><rect width="95" height="27" fill="white"></rect></clipPath></defs></svg></a>
+
+            </div>
+            <p class="a2026_info">© 2026 Valve Corporation. Все права сохранены. Все торговые марки являются собственностью соответствующих владельцев в США и других странах.
+                Все цены указаны с учётом НДС (если применимо).
+            </p>
+            <svg width="30" height="22" viewBox="0 0 30 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M11.9318 6.84835V15.7121L19.7727 11.2801L11.9318 6.84835ZM29.3731 18.5011C29.028 19.7918 28.0114 20.8083 26.7208 21.1533C24.3813 21.7803 14.9999 21.7803 14.9999 21.7803C14.9999 21.7803 5.61873 21.7803 3.27924 21.1533C1.98856 20.8083 0.971973 19.7918 0.626931 18.5011C0 16.1616 0 11.2802 0 11.2802C0 11.2802 0 6.3991 0.626931 4.05945C0.971973 2.76859 1.98843 1.7522 3.27924 1.40697C5.61873 0.780272 14.9999 0.780273 14.9999 0.780273C14.9999 0.780273 24.3813 0.780272 26.7208 1.40697C28.0114 1.7522 29.028 2.76859 29.3731 4.05945C30 6.3991 30 11.2803 30 11.2803C30 11.2803 30 16.1616 29.3731 18.5011Z"></path></svg>
+            <a href="https://bsky.app/profile/steampowered.com" target="_blank" class="FYJ4NYxpWeIha0N1-jUcm _2OgYmw12nDHXtyT9za9yzL _1DLGHwAfYnbFVIwbZjO2cn" style="--text-color: var(--color-dull-11); --white-space: nowrap;"><svg width="24" height="22" viewBox="0 0 24 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M5.20232 2.04977C7.95386 4.13518 10.9135 8.36354 12.0001 10.6327C13.0868 8.3637 16.0462 4.13514 18.7978 2.04977C20.7832 0.545013 24 -0.619279 24 3.08556C24 3.82547 23.5798 9.30116 23.3333 10.1901C22.4767 13.2807 19.355 14.069 16.5782 13.5919C21.432 14.4259 22.6667 17.1884 20.0001 19.9508C14.9357 25.1972 12.7211 18.6345 12.1534 16.9528C12.0494 16.6446 12.0007 16.5003 12 16.623C11.9993 16.5003 11.9506 16.6446 11.8466 16.9528C11.2791 18.6345 9.06454 25.1974 3.99987 19.9508C1.33323 17.1884 2.56794 14.4257 7.42179 13.5919C4.64492 14.069 1.5232 13.2807 0.666658 10.1901C0.420196 9.30108 0 3.82538 0 3.08556C0 -0.619279 3.21689 0.545013 5.20218 2.04977H5.20232Z"></path></svg></a>
+            <a href="https://facebook.com/steam" target="_blank" class="FYJ4NYxpWeIha0N1-jUcm _2OgYmw12nDHXtyT9za9yzL _1DLGHwAfYnbFVIwbZjO2cn" style="--text-color: var(--color-dull-11); --white-space: nowrap;"><svg width="22" height="22" viewBox="0 0 22 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M10.9998 0C4.92482 0 0 4.94301 0 11.0404C0 16.2179 3.55161 20.5625 8.34267 21.7558V14.4144H6.07452V11.0404H8.34267V9.58661C8.34267 5.82889 10.0371 4.08716 13.7128 4.08716C14.4097 4.08716 15.6122 4.2245 16.1041 4.3614V7.4196C15.8445 7.39221 15.3935 7.37853 14.8334 7.37853C13.0299 7.37853 12.333 8.06435 12.333 9.84716V11.0404H15.9259L15.3086 14.4144H12.333V22C17.7796 21.3398 22 16.6851 22 11.0404C21.9996 4.94301 17.0747 0 10.9998 0Z"></path></svg></a>
+            <a href="https://twitter.com/steam" target="_blank" class="FYJ4NYxpWeIha0N1-jUcm _2OgYmw12nDHXtyT9za9yzL _1DLGHwAfYnbFVIwbZjO2cn" style="--text-color: var(--color-dull-11); --white-space: nowrap;"><svg width="20" height="22" viewBox="0 0 20 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M11.9027 9.45261L19.3482 0.560547H17.5838L11.119 8.2814L5.95547 0.560547H0L7.8082 12.2358L0 21.5605H1.76443L8.59152 13.4071L14.0445 21.5605H20L11.9023 9.45261H11.9027ZM9.48608 12.3387L8.69495 11.1761L2.40018 1.92521H5.11025L10.1902 9.39099L10.9813 10.5536L17.5847 20.2579H14.8746L9.48608 12.3392V12.3387Z"></path></svg></a>
+        </div>
+
+
+        <div class="footer_links">
+            <div class="footer-column">
+                <h3>STEAM</h3>
+                    <ul>
+                        <li><a href="https://store.steampowered.com/about/?snr=1_44_44_">О Steam</a></li>
+                        <li><a href="https://store.steampowered.com/subscriber_agreement/?snr=1_44_44_">Соглашение подписчика Steam</a></li>
+                        <li><a href="https://partner.steamgames.com/">Steamworks</a></li>
+                        <li><a href="https://partner.steamgames.com/steamdirect">Распространение в Steam</a></li>
+                        <li><a href="https://store.steampowered.com/digitalgiftcards/?snr=1_44_44_">Подарочные карты</a></li>
+                    </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>VALVE</h3>
+                <ul>
+                    <li><a href="https://valvesoftware.com/about">О Valve</a></li>
+                    <li><a href="https://valvesoftware.com/">Вакансии</a></li>
+                    <li><a href="https://store.steampowered.com/hardware/?snr=1_44_44_">Оборудование</a></li>
+                    <li><a href="https://store.steampowered.com/hardware_recycling/?snr=1_44_44_">Переработка</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>ПРАВОВАЯ ИНФОРМАЦИЯ</h3>
+                <ul>
+                    <li><a href="https://store.steampowered.com/privacy_agreement/?snr=1_44_44_">Конфиденциальность</a></li>
+                    <li><a href="https://help.steampowered.com/faqs/view/10BB-D27A-6378-4436">Доступность</a></li>
+                    <li><a href="https://store.steampowered.com/legal/?snr=1_44_44_">Положения и политика</a></li>
+                    <li><a href="https://store.steampowered.com/account/cookiepreferences/?snr=1_44_44_">Файлы cookie</a></li>
+                    <li><a href="https://store.steampowered.com/steam_refunds/?snr=1_44_44_">Возврат средств</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ</h3>
+                <ul>
+                    <li><a href="https://store.steampowered.com/about/?snr=1_44_44_">Установить Steam</a></li>
+                    <li><a href="https://store.steampowered.com/mobile/?snr=1_44_44_">Установить мобильные приложения</a></li>
+                    <li><a href="https://help.steampowered.com/">Поддержка</a></li>
+                    <li><a href="https://store.steampowered.com/account/?snr=1_44_44_">Мой аккаунт</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
