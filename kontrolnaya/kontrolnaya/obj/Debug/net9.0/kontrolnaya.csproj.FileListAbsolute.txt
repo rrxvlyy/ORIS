@@ -1,0 +1,32 @@
+C:\Users\ibrem\RiderProjects\kontrolnaya\kontrolnaya\bin\Debug\net9.0\kontrolnaya.exe
+C:\Users\ibrem\RiderProjects\kontrolnaya\kontrolnaya\bin\Debug\net9.0\kontrolnaya.deps.json
+C:\Users\ibrem\RiderProjects\kontrolnaya\kontrolnaya\bin\Debug\net9.0\kontrolnaya.runtimeconfig.json
+C:\Users\ibrem\RiderProjects\kontrolnaya\kontrolnaya\bin\Debug\net9.0\kontrolnaya.dll
+C:\Users\ibrem\RiderProjects\kontrolnaya\kontrolnaya\bin\Debug\net9.0\kontrolnaya.pdb
+C:\Users\ibrem\RiderProjects\kontrolnaya\kontrolnaya\obj\Debug\net9.0\kontrolnaya.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ibrem\RiderProjects\kontrolnaya\kontrolnaya\obj\Debug\net9.0\kontrolnaya.AssemblyInfoInputs.cache
+C:\Users\ibrem\RiderProjects\kontrolnaya\kontrolnaya\obj\Debug\net9.0\kontrolnaya.AssemblyInfo.cs
+C:\Users\ibrem\RiderProjects\kontrolnaya\kontrolnaya\obj\Debug\net9.0\kontrolnaya.csproj.CoreCompileInputs.cache
+C:\Users\ibrem\RiderProjects\kontrolnaya\kontrolnaya\obj\Debug\net9.0\kontrolnaya.dll
+C:\Users\ibrem\RiderProjects\kontrolnaya\kontrolnaya\obj\Debug\net9.0\refint\kontrolnaya.dll
+C:\Users\ibrem\RiderProjects\kontrolnaya\kontrolnaya\obj\Debug\net9.0\kontrolnaya.pdb
+C:\Users\ibrem\RiderProjects\kontrolnaya\kontrolnaya\obj\Debug\net9.0\kontrolnaya.genruntimeconfig.cache
+C:\Users\ibrem\RiderProjects\kontrolnaya\kontrolnaya\obj\Debug\net9.0\ref\kontrolnaya.dll
+C:\Users\ibrem\RiderProjects\kontrolnaya\kontrolnaya\bin\Debug\net9.0\ContentTypeResolver.cs
+C:\Users\ibrem\RiderProjects\kontrolnaya\kontrolnaya\bin\Debug\net9.0\Controllers\AuthController.cs
+C:\Users\ibrem\RiderProjects\kontrolnaya\kontrolnaya\bin\Debug\net9.0\feedback realization\Feedback.cs
+C:\Users\ibrem\RiderProjects\kontrolnaya\kontrolnaya\bin\Debug\net9.0\feedback realization\FeedbackController.cs
+C:\Users\ibrem\RiderProjects\kontrolnaya\kontrolnaya\bin\Debug\net9.0\feedback realization\FeedbackStorage.cs
+C:\Users\ibrem\RiderProjects\kontrolnaya\kontrolnaya\bin\Debug\net9.0\Framework\Attributes\GetAttribute.cs
+C:\Users\ibrem\RiderProjects\kontrolnaya\kontrolnaya\bin\Debug\net9.0\Framework\Attributes\HttpControllerAttribute.cs
+C:\Users\ibrem\RiderProjects\kontrolnaya\kontrolnaya\bin\Debug\net9.0\Framework\Attributes\PostAttribute.cs
+C:\Users\ibrem\RiderProjects\kontrolnaya\kontrolnaya\bin\Debug\net9.0\Framework\Attributes\PutAttribute.cs
+C:\Users\ibrem\RiderProjects\kontrolnaya\kontrolnaya\bin\Debug\net9.0\Framework\Core\HttpServer.cs
+C:\Users\ibrem\RiderProjects\kontrolnaya\kontrolnaya\bin\Debug\net9.0\Framework\Handlers\ControllerHandler.cs
+C:\Users\ibrem\RiderProjects\kontrolnaya\kontrolnaya\bin\Debug\net9.0\Framework\Handlers\Handler.cs
+C:\Users\ibrem\RiderProjects\kontrolnaya\kontrolnaya\bin\Debug\net9.0\Framework\Handlers\StaticFileHandler.cs
+C:\Users\ibrem\RiderProjects\kontrolnaya\kontrolnaya\bin\Debug\net9.0\HomeworkController.cs
+C:\Users\ibrem\RiderProjects\kontrolnaya\kontrolnaya\bin\Debug\net9.0\Program.cs
+C:\Users\ibrem\RiderProjects\kontrolnaya\kontrolnaya\bin\Debug\net9.0\Settings.cs
+C:\Users\ibrem\RiderProjects\kontrolnaya\kontrolnaya\bin\Debug\net9.0\settings.json
+C:\Users\ibrem\RiderProjects\kontrolnaya\kontrolnaya\bin\Debug\net9.0\static\feedback.html

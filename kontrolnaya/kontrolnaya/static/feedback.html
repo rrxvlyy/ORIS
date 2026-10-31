@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Обратная связь</title>
+</head>
+<body>
+
+<h1>Обратная связь</h1>
+
+<h2>1. Список</h2>
+<form method="get" action="/feedback">
+    Автор: <input name="author">
+    <button type="submit">Показать</button>
+</form>
+<p><a href="/feedback">Показать всех</a></p>
+
+<h2>2. Детали</h2>
+<form method="get" action="/feedback/details">
+    Id: <input name="id" type="number" value="1">
+    <button type="submit">Открыть</button>
+</form>
+
+<h2>3. Создать</h2>
+<form method="post" action="/feedback/create">
+    Автор: <input name="author"><br>
+    Сообщение: <textarea name="message"></textarea><br>
+    <button type="submit">Создать</button>
+</form>
+
+<h2>4. Обновить (PUT)</h2>
+<form id="updateForm">
+    Id: <input id="uid" type="number" value="1"><br>
+    Автор: <input id="uauthor"><br>
+    Сообщение: <textarea id="umessage"></textarea><br>
+    Статус:
+    <select id="ustatus">
+        <option value="pending">pending</option>
+        <option value="moderated">moderated</option>
+    </select><br>
+    <button type="submit">Обновить</button>
+</form>
+<pre id="updateResult"></pre>
+
+<script>
+    document.getElementById("updateForm").addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const id = document.getElementById("uid").value;
+        const body = new URLSearchParams({
+            author: document.getElementById("uauthor").value,
+            message: document.getElementById("umessage").value,
+            status: document.getElementById("ustatus").value
+        });
+        const res = await fetch("/feedback/update?id=" + id, {
+            method: "PUT",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body
+        });
+        document.getElementById("updateResult").textContent =
+            "Статус: " + res.status + (res.status === 204 ? " (обновлено)" : "");
+    });
+</script>
+
+</body>
+</html>
